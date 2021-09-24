@@ -8,5 +8,5 @@ function abrirMenu(){
     menu_principal.style.top = "0vh";
 }
 function cerrarMenu(){
-    menu_principal.style.top = "100vh";
+    menu_principal.style.top = "-100vh";
 }
