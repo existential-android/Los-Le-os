@@ -5,8 +5,8 @@ let cerrar_menu = document.querySelector(".cerrarMenu")
 abrir_menu.addEventListener('click', abrirMenu);
 cerrar_menu.addEventListener('click', cerrarMenu);
 function abrirMenu(){
-    menu_principal.style.bottom = "0vh";
+    menu_principal.style.top = "0vh";
 }
 function cerrarMenu(){
-    menu_principal.style.bottom = "100vh";
+    menu_principal.style.top = "100vh";
 }
