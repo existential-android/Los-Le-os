@@ -110,11 +110,11 @@ h1 {margin: 20px 0;}
 .carta__link:hover {color: white; transform: scale(1.05);}
 @media (min-width: 700px) {.banner{background-image: url("../Imagenes/image.jpg");}}
 @media (min-width: 1000px) {
-    .logo {position: absolute;}
+    .logo {position: absolute; top: 0;}
     .navbar {
         position: relative;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         width: max(200px, 15%);
         height: 100vh;
