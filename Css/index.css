@@ -25,7 +25,7 @@ header {
     position: fixed;
     width: 100%;
     height: 100vh;
-    top: -100vh;
+    bottom: 100vh;
     right: 0;
     left: 0;
     z-index: 10;
@@ -33,7 +33,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background: white;
-    transition: top 1s ease;
+    transition: bottom 1s ease;
 }
 .navegacion {
     display: flex;
@@ -51,7 +51,7 @@ header {
     background:#A40D13;
     padding: 20px 0;
 }
-.cerrarMenu {color: white;}
+.cerrarMenu {color: white; cursor: pointer;}
 .navegacion__item {padding: 20px 20px; transition: 0.3s;}
 .navegacion__item:hover {background:#A40D13;}
 .navegacion__item:hover .navegacion__link{color: white;}
