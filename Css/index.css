@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Nexa Rust;
+    src: url("../Fonts/Nexa-Rust-Sans-Black.ttf.woff") format('woff');
+}
+a {text-decoration: none;}
+header {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.navbar {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    padding: 0 10px;
+}
+.abrirMenu {color: white; cursor: pointer;}
+.navegacion__contenedor {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: -100%;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    transition: top 1s ease;
+}
+.navegacion {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    height: 40%;
+}
+.cerrarMenu__contenedor {
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    background:#A40D13;
+    padding: 20px 0;
+}
+.cerrarMenu {color: white;}
+.navegacion__item {padding: 20px 20px; transition: 0.3s;}
+.navegacion__item:hover {background:#A40D13;}
+.navegacion__item:hover .navegacion__link{color: white;}
+.navegacion__link {font: 30px 'Playfair Display'; color: #A40D13; transition: 0.3s;}
+.navegacion__link:hover {color:#A40D13;}
+.language {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.language a {font: 18px 'Playfair Display'; font-weight: bold; padding: 15px 10px; transition: 0.3s;}
+.language-es {background:#A40D13; color: white;}
+.language-es:hover {color: white}
+.language-en {color: black}
+.language-en:hover {color: white; background:#A40D13;}
+.language-en:hover + .language-es {background: white; color: black}
+.banner {
+    display: flex;
+    flex-direction: column-reverse;
+    background-image: url("../Imagenes/image\ \(4\).jpg");
+    background-position: 25%;
+    background-size: cover;
+    flex-grow: 1;
+    height: 100%;
+}
+.bienvenida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    font-family: 'Nexa Rust'; 
+    font-weight: bold;
+    font-size: 30px;
+}
+h1 {margin: 20px 0;}
+.bienvenida-small {color: #A40D13;}
+.bienvenida-big {color: rgb(255, 174, 0);}
+.carta__contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35vh;
+}
+.carta__link {
+    font-family: 'Nexa Rust'; 
+    font-size: 25px;
+    color: white;
+    border-color: rgb(255, 174, 0);
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.5);
+    padding: 0 1.5%;
+    transition: 0.5s;
+}
+.carta__link:hover {color: white; transform: scale(1.05);}
+@media (min-width: 700px) {.banner{background-image: url("../Imagenes/image.jpg");}}
+@media (min-width: 1000px) {
+    .logo {position: absolute;}
+    .navbar {
+        position: relative;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: max(200px, 15%);
+        height: 100vh;
+        background: white;
+        padding: 0;
+    }
+    .abrirMenu{display: none;}
+    .navegacion__contenedor {
+        display: flex;
+        position: static;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cerrarMenu__contenedor {display: none;}
+    .navegacion__link {color: black;}
+    .language {position: absolute; bottom: 0;}
+}
