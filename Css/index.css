@@ -33,7 +33,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background: white;
-    transition: bottom 1s ease;
+    transition: 1s ease;
 }
 .navegacion {
     display: flex;
